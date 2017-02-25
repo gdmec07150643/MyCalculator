@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 垂直布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 标题 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人标准身高计算器"
+            android:textSize="22.0dip"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <!--提示输入框 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10.0dip"
+        >
+
+        <TextView
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text="请输入你的体重"
+            android:layout_marginLeft="5.0dip"
+            />
+        <EditText
+            android:layout_width="150.0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+
+            />
+    </LinearLayout>
+    <!-- 选择性别 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text="请选择你的性别："
+            android:layout_marginLeft="5.0dip"/>
+        <CheckBox android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男">
+        </CheckBox>
+        <CheckBox android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女">
+        </CheckBox>
+    </LinearLayout>
+    <!--运算按钮-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_marginTop="20.0dip"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculator"
+            android:text="运算"/>
+    </LinearLayout>
+    <!-- 显示结果 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:layout_marginTop="10.0dip"/>
+    </LinearLayout>
+
+
+</LinearLayout>
